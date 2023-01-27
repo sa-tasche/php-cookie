@@ -408,7 +408,7 @@ final class Cookie {
 	 * Parses the given cookie header and returns an equivalent cookie instance
 	 *
 	 * @param string $cookieHeader the cookie header to parse
-	 * @return \Delight\Cookie\Cookie|null the cookie instance or `null`
+	 * @return \Pinga\Cookie\Cookie|null the cookie instance or `null`
 	 */
 	public static function parse($cookieHeader) {
 		if (empty($cookieHeader)) {
