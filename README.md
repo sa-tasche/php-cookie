@@ -1,17 +1,17 @@
-# PHP-Cookie
+# Pinga Cookie
 
 Modern cookie management for PHP
 
 ## Requirements
 
- * PHP 5.4.0+
+ * PHP 8.1.0+
 
 ## Installation
 
  1. Include the library via Composer [[?]](https://github.com/delight-im/Knowledge/blob/master/Composer%20(PHP).md):
 
     ```
-    $ composer require delight-im/cookie
+    $ composer require pinga/cookie
     ```
 
  1. Include the Composer autoloader:
