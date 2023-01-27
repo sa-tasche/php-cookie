@@ -1,12 +1,15 @@
 <?php
 
-/*
- * PHP-Cookie (https://github.com/delight-im/PHP-Cookie)
- * Copyright (c) delight.im (https://www.delight.im/)
- * Licensed under the MIT License (https://opensource.org/licenses/MIT)
+/**
+ * Pinga Cookie
+ *
+ * Written in 2023 by Taras Kondratyuk (https://getpinga.com)
+ * Based on PHP-Cookie (https://github.com/delight-im/PHP-Cookie) by delight.im (https://www.delight.im/)
+ *
+ * @license MIT
  */
 
-namespace Delight\Cookie;
+namespace Pinga\Cookie;
 
 /**
  * Modern cookie management for PHP
