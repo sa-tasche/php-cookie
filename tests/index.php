@@ -134,7 +134,7 @@ require __DIR__.'/../vendor/autoload.php';
 \testEqual(\Pinga\Cookie\Cookie::parse('Set-Cookie: __%53ecure-foo=e3328c803834'), 'Set-Cookie: __%53ecure-foo=e3328c803834');
 
 \setcookie('hello', 'world', \time() + 86400, '/foo/', 'example.com', true, true);
-$cookie = \Pinga\Cookie\Cookie::parse(\Delight\Http\ResponseHeader::take('Set-Cookie'));
+$cookie = \Pinga\Cookie\Cookie::parse(\Pinga\Http\ResponseHeader::take('Set-Cookie'));
 
 \testEqual($cookie, (new \Pinga\Cookie\Cookie('hello'))->setValue('world')->setMaxAge(86400)->setPath('/foo/')->setDomain('example.com')->setHttpOnly(true)->setSecureOnly(true)->setSameSiteRestriction(null));
 
@@ -218,7 +218,7 @@ session_write_close();
 \testEqual(\Pinga\Http\ResponseHeader::take('Set-Cookie'), \str_replace('; SameSite=Lax', '', $sessionCookieReferenceHeader));
 session_write_close();
 
-@\Delight\Cookie\Session::start('None');
+@\Pinga\Cookie\Session::start('None');
 \testEqual(\Pinga\Http\ResponseHeader::take('Set-Cookie'), \str_replace('; SameSite=Lax', '; SameSite=None', $sessionCookieReferenceHeader));
 session_write_close();
 
