@@ -3,7 +3,7 @@
 	"description": "Modern cookie management for PHP",
 	"require": {
 		"php": ">=8.1.0",
-		"delight-im/http": "^2.0"
+		"pinga/http": "^0.1"
 	},
 	"type": "library",
 	"keywords": [ "cookie", "cookies", "http", "csrf", "xss", "samesite", "same-site" ],
